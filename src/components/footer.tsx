@@ -19,7 +19,7 @@ export const Footer=()=>{
                     />
                 </a>
                 <a
-                    href="https://www.linkedin.com/in/hamzat-lawal-b81771202"
+                    href="https://wa.me/+2349018378291"
                     className="me-5 border rounded-circle p-3"
                 >
                     <FaWhatsapp

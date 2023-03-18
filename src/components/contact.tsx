@@ -63,15 +63,15 @@ export const Contact=()=>{
                             </span>
                         </div>
                         <div>
-                            <h6  className="fs-6 text-white text-start fw-bold grey">names</h6>
+                            <h6  className="fs-6 text-white text-start fw-bold grey">Email</h6>
                             <h6  className="fs-6 text-white text-start grey">lawalhamzat27@gmail.com</h6>
                         </div>
                         <div>
                             <h6  className="fs-6 text-white text-start mt-5 fw-bold grey">Whatsapp</h6>
-                            <h6  className="fs-6 text-white text-start grey">+9018378291</h6>
+                            <h6  className="fs-6 text-white text-start grey">+2349018378291</h6>
                             <a 
                                 className="link-nav"
-                                href="">
+                                href="https://wa.me/+2349018378291">
                                 Write me <span><FaArrowRight/></span>
                             </a>
                         </div>
@@ -102,7 +102,7 @@ export const Contact=()=>{
                                     htmlFor="names"
                                     className="label ms-2 mb-2-"
                                 >
-                                    Names
+                                    Name
                                 </label>
                                 <input 
                                     type="text" 

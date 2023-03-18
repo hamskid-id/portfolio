@@ -94,7 +94,7 @@ export default function SimpleSlider({isInView}:view) {
                                     className="w-100 full-r-12 mb-4 slide-img"
                                 />
                                 <h6 className="grey fs-6">web</h6>
-                                <h6 className="fw-bold text-white fs-4">{name}</h6>
+                                <h6 className="fw-bold text-white fs-5 text-start">{name}</h6>
                                 <a 
                                     className="link-nav mt-2"
                                     href={link}>
