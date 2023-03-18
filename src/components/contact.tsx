@@ -55,7 +55,7 @@ export const Contact=()=>{
                                 <FaRegComment
                                     className="me-1"
                                     size="1rem"
-                                    color="black"
+                                    color="#434343"
                                 />
                             </span>
                             <span className="fs-6 text-white">
@@ -87,7 +87,7 @@ export const Contact=()=>{
                                 <FaPencilAlt
                                      className="me-1"
                                      size="1rem"
-                                     color="black"
+                                     color="#434343"
                                 />
                             </span>
                             <span className="fs-6 text-white">
