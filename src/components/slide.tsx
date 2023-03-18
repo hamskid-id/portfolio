@@ -1,4 +1,3 @@
-
 import { motion} from "framer-motion";
 import Slider from "react-slick";
 import {FaArrowRight } from "react-icons/fa";
@@ -87,7 +86,7 @@ export default function SimpleSlider({isInView}:view) {
                     const {name, image, link} = slide;
                     return(
                         <div key={index}>
-                            <div className="d-flex flex-column align-items-start justify-content-start shadow mrx-5">                                
+                            <div className="d-flex flex-column align-items-start justify-content-start mrx-5">                                
                                 <img 
                                     src={image}
                                     alt="object not found"
