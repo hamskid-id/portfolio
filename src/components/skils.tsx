@@ -20,7 +20,7 @@ export const Skills=()=>{
                         }
                         variants={variants}
                     >
-                        <h6 className="fs-4 lightgrey fw-bold nunito mb-3">My favorite skills</h6>
+                        <h6 className="fs-3 lightgrey fw-bold nunito mb-3">My favorite skills</h6>
                         <ul className="skills">
                             <li>HTMl</li>
                             <li>Css</li>
@@ -41,7 +41,7 @@ export const Skills=()=>{
                         }
                         variants={variants}
                     >
-                        <h6 className="fs-4 nunito lightgrey fw-bold mb-3">DevTools</h6>
+                        <h6 className="fs-3 nunito lightgrey fw-bold mb-3">DevTools</h6>
                         <ul className="skills">
                             <li>Firebase</li>
                             <li>Github</li>

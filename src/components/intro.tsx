@@ -1,6 +1,7 @@
 import { Person } from "./person";
 import { TypeAnimation } from 'react-type-animation';
-import {useInView } from "framer-motion";
+import {useInView,motion } from "framer-motion";
+import { variants } from "./varient";
 import {useRef} from "react";
 
 export const Intro=()=>{
@@ -25,7 +26,14 @@ export const Intro=()=>{
                 repeat={Infinity}
                 style={{ fontSize: '1.5em',color:"white" }}
                 />
-            <h6 className="display-4 nunito lightgrey fw-bolder">Frontend Developer</h6>
+            <motion.h6
+                animate={
+                    isInView ? "staggered":"staggeredback"
+                }
+                variants={variants}  
+                className="display-4 nunito lightgrey fw-bolder">
+                Frontend Developer
+            </motion.h6>
             <div className="person-1">
                 <Person
                     isInView={isInView}

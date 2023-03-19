@@ -42,7 +42,7 @@ export const Biograph=()=>{
                                     className="d-flex flex-column align-items-start mb-5 moveFromLeft"
                                     >
                                     <p className="fs-5 grey fw-bold">{name}</p>
-                                    <p className="fs-6 text-white text-start">{desc}</p>
+                                    <p className="fs-6 text-white text-start text-white">{desc}</p>
                                 </motion.div>
                             )
                         })
@@ -80,7 +80,7 @@ export const Biograph=()=>{
                                     className="d-flex flex-column align-items-end mb-5 moveFromRight"
                                 >
                                     <p className="fs-5 grey fw-bold">{name}</p>
-                                    <p className="display-5 fw-bold text-white">{desc}</p>
+                                    <p className="display-5 text-white">{desc}</p>
                                 </motion.div>
                             )
                         })

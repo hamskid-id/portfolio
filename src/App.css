@@ -5,10 +5,10 @@
   font-family: 'Heebo', sans-serif;
 }
 body{
-  background:#26282A ;
+  background: #0D0E0E;
 }
 .bg-black{
-  background-color: #26282A;
+  background-color: #0D0E0E;
 }
 .bio{
   background-image: url(https://proxify.io/_nuxt/img/83827f9.svg);
@@ -43,6 +43,9 @@ body{
 .lightgrey{
   color:#5258fb
 }
+.c-blue{
+  color: #CCCCFF;
+}
 .slide-img{
   height: 15rem;
   object-fit: cover;
@@ -53,14 +56,14 @@ body{
 .label{
   margin-bottom: -0.9rem;
   z-index: 1;
-  background: #26282A;
+  background: #0D0E0E;
   width: fit-content;
   color:white;
 }
 .input{
   border: 1px solid grey;
   color:white;
-  background: #26282A;
+  background: #0D0E0E;
 }
 .link-nav{
   text-decoration: none;
@@ -94,7 +97,7 @@ body{
 }
 .skills{
   display:block;
-  color:white;
+  color: white;
   font-family: 'Nunito', sans-serif;
   list-style: none;
   text-align: left;
@@ -136,7 +139,7 @@ body{
   margin-left:3rem;
 }
 .prr-5{
-  padding:3rem;
+  padding:2rem;
 }
 .hamburger{
   display:none;
@@ -178,7 +181,7 @@ body{
       left: 0;
       z-index:100;
       width: 70%;
-      background: #26282A;
+      background: #0D0E0E;
       top:0;
       padding:1rem;
    }

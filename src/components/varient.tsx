@@ -4,7 +4,7 @@ export const variants = {
         display:"block",
         x: 0, 
         transition: {
-            duration: 1
+            duration: 0.5
         } 
     },
     returnToLeft:{
@@ -12,7 +12,7 @@ export const variants = {
         display:"none", 
         x: "-100%",
         transition: { 
-            duration:1
+            duration:0.5
        }
     },
     returnToRight:{
@@ -28,7 +28,7 @@ export const variants = {
         display:"block",
          x: 0,
          transition: {
-            duration:1
+            duration:0.5
         } 
     },
     returnToTop:{
@@ -36,7 +36,7 @@ export const variants = {
         display:"none", 
         y: "-50%",
         transition: { 
-            duration:1
+            duration:0.5
        }
     },
     moveFromTop: {
@@ -44,7 +44,7 @@ export const variants = {
         display:"block",
          y: 0,
          transition: {
-            duration:1
+            duration:0.5
         } 
     },
     staggered: { 

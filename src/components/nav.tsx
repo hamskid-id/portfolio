@@ -51,7 +51,7 @@ export const Nav =({
                     </span>
                 <span className="hamburger rounded-circle p-3 border-grey">
                     <FaAlignRight
-                        color="grey"
+                        color="white"
                         size="1.5rem"
                         onClick={showNav}
                     />

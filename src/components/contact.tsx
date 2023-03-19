@@ -39,7 +39,7 @@ export const Contact=()=>{
                     isInView ? "staggered":"staggeredback"
                 }
                 variants={variants} 
-                className="fs-6 grey mb-5 staggered">Interested in working together? We should queue up a chat.
+                className="fs-6 mb-5 staggered grey">Interested in working together? We should queue up a chat.
             </motion.h6>
                 <div 
                     ref={ref}
