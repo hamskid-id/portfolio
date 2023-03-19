@@ -4,7 +4,7 @@ export const variants = {
         display:"block",
         x: 0, 
         transition: {
-            duration: 0.5
+            duration: 0.8
         } 
     },
     returnToLeft:{
@@ -12,7 +12,7 @@ export const variants = {
         display:"none", 
         x: "-100%",
         transition: { 
-            duration:0.5
+            duration:0.8
        }
     },
     returnToRight:{
@@ -20,7 +20,7 @@ export const variants = {
         display:"none", 
         x: "100%",
         transition: { 
-            duration:0.5
+            duration:0.8
        }
     },
     moveFromRight: {
@@ -28,7 +28,7 @@ export const variants = {
         display:"block",
          x: 0,
          transition: {
-            duration:0.5
+            duration:0.8
         } 
     },
     returnToTop:{
@@ -36,7 +36,7 @@ export const variants = {
         display:"none", 
         y: "-50%",
         transition: { 
-            duration:0.5
+            duration:0.8
        }
     },
     moveFromTop: {
@@ -44,7 +44,7 @@ export const variants = {
         display:"block",
          y: 0,
          transition: {
-            duration:0.5
+            duration:0.8
         } 
     },
     staggered: { 
@@ -53,7 +53,7 @@ export const variants = {
         x: 0, 
         transition: { 
             staggerChildren: 0.07,
-            duration:0.5
+            duration:0.8
         } 
     },
     staggeredback: {
@@ -62,7 +62,7 @@ export const variants = {
         x: "-100%",
         transition: { 
         staggerChildren: 0.05, 
-        duration:0.5,
+        duration:0.8,
         staggerDirection: -1 
         }   
     },

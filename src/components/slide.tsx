@@ -47,13 +47,7 @@ export default function SimpleSlider({isInView}:view) {
       };
 
     return (
-      <motion.div
-        animate={
-            isInView ? "moveFromLeft":"returnToLeft"
-        }
-        variants={variants} 
-        className="w-100 prr-5 moveFromLeft"
-        >
+      <div className="w-100 prr-5">
         <Slider {...settings}>
             {
                 [
@@ -85,7 +79,13 @@ export default function SimpleSlider({isInView}:view) {
                 ].map((slide,index)=>{
                     const {name, image, link} = slide;
                     return(
-                        <div key={index}>
+                        <motion.div
+                            animate={
+                                isInView ? "moveFromLeft":"returnToLeft"
+                            }
+                            variants={variants} 
+                            className="moveFromLeft"
+                            key={index}>
                             <div className="d-flex flex-column align-items-start justify-content-start mrx-5">                                
                                 <img 
                                     src={image}
@@ -100,11 +100,11 @@ export default function SimpleSlider({isInView}:view) {
                                     View demo <span><FaArrowRight/></span>
                                 </a>                                   
                             </div>
-                        </div> 
+                        </motion.div> 
                     )
                 })
             }
         </Slider>
-    </motion.div>
+    </div>
     );
 }
