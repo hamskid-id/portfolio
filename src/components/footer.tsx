@@ -7,7 +7,8 @@ export const Footer=()=>{
                 color="#61dafb"
                 size="4rem"
             />
-            <p className="fs-5 text-white text-start grey mt-2">Living, Learning & Leveling up day by day.</p>
+            <p
+            className="fs-5 text-white text-center grey mt-2">Living, Learning & Leveling up day by day.</p>
             <div className="d-flex justify-content-center mt-3">
                 <a
                     href="https://www.linkedin.com/in/hamzat-lawal-b81771202"

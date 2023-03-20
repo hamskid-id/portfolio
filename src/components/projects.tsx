@@ -18,7 +18,10 @@ export const Projects=()=>{
                     isInView ? "staggered":"staggeredback"
                 }
                 variants={variants} 
-                className="fs-6 grey mb-5 staggered text-white">Here are few projects I've worked on recently. Want to see more? Email me
+                style={{
+                    fontFamily: `'Montserrat Alternates', sans-serif`,
+                }}
+                className="fs-6  mb-5 staggered bbb">Here are few projects I've worked on recently. Want to see more? Email me
             </motion.h6>
             <div
                 className="d-flex justify-content-between w-100 m-auto">
