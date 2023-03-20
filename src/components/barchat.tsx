@@ -53,7 +53,7 @@ export const BarChart =()=>{
             (data)=>data.name
         ),
         datasets:[{
-            label:"key email marketing metrics",
+            label:"key skills metrics",
             data:Radardata?.map(
                 (data)=>data.number
             ),

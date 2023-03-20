@@ -28,10 +28,10 @@ export const Intro=()=>{
                 />
             <motion.h6
                 animate={
-                    isInView ? "staggered":"staggeredback"
+                    isInView ?  "moveFromTop":"returnToTop"
                 }
                 variants={variants}  
-                className="display-3 nunito lightgrey"
+                className="display-3 nunito lightgrey fw-bold"
                 style={{
                     fontFamily: `'Karla', sans-serif`,
                 }}

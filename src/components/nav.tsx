@@ -42,7 +42,7 @@ export const Nav =({
                         className="display-5"
                         style={{
                             fontFamily: `'Montserrat Alternates', sans-serif`,
-                            fontWeight:"300",
+                            fontWeight:"400",
                             color: "#bbb",
                             fontSize:"38px"
                         }}

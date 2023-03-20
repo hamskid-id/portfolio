@@ -32,7 +32,7 @@ export const Contact=()=>{
     },[state])
     
     return(
-        <div className="wt-75 m-auto p-4 bg bg-black contact">
+        <div className="wt-75 m-auto p-4 bg bg-black">
             <h6 className="fs-1 nunito lightgrey mt-5 bg-black p-2 r-12">Contact Me</h6>
             <motion.h6
                 animate={
