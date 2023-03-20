@@ -50,7 +50,7 @@ export const Biograph=()=>{
                                      style={{
                                         fontFamily: `'Montserrat Alternates', sans-serif`,
                                     }}
-                                     className="fs-6 text-start grey">{desc}</p>
+                                     className="fs-6 text-start bbb op-4">{desc}</p>
                                 </motion.div>
                             )
                         })
@@ -88,7 +88,7 @@ export const Biograph=()=>{
                                     className="d-flex flex-column align-items-end mb-5 moveFromRight"
                                 >
                                     <p className="fs-5 bbb">{name}</p>
-                                    <p className="display-5 grey">{desc}</p>
+                                    <p className="display-5 bbb op-4">{desc}</p>
                                 </motion.div>
                             )
                         })
