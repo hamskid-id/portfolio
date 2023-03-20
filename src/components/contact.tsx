@@ -64,7 +64,7 @@ export const Contact=()=>{
                         </div>
                         <div>
                             <h6  className="fs-6 text-white text-start fw-bold grey">Email</h6>
-                            <h6  className="fs-6 text-white text-start grey">lawalhamzat27@gmail.com</h6>
+                            <h6  className="fs-6 text-white text-start grey break">lawalhamzat27@gmail.com</h6>
                         </div>
                         <div>
                             <h6  className="fs-6 text-white text-start mt-5 fw-bold grey">Whatsapp</h6>

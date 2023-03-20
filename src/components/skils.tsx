@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { Divider } from "./divider"
-import { Vertex } from "./verticaldivide"
+import { FaHotjar,FaGithub } from "react-icons/fa";
 import {useRef} from "react";
 import { variants } from "./varient";
 import { BarChart } from "./barchat";
@@ -35,10 +35,23 @@ export const Skills=()=>{
                         variants={variants}
                     >
                         <h6 className="fs-3 nunito lightgrey fw-bold mb-3">DevTools</h6>
-                        <ul className="skills">
-                            <li>Firebase</li>
-                            <li>Github</li>
-                        </ul>
+                        <div className="d-flex justify-content-center mt-3">
+                            <span
+                            >
+                                <FaHotjar
+                                    size="2.5rem"
+                                    color="gold"
+                                    className="me-2"
+                                />
+                            </span>
+                            <span
+                            >
+                                <FaGithub
+                                    size="2.5rem"
+                                    color="white"
+                                />
+                            </span>
+                        </div>
                     </motion.div>
                 </div>
                 <Divider/>

@@ -22,28 +22,31 @@ export const BarChart =()=>{
     const Radardata=[
         {
             name:"Html",
-            number:90
+            number:94
         },{
             name:"Css",
-            number:90
+            number:94
         },{
             name:"Javascript",
-            number:90
+            number:95
         },{
             name:"Bootstrap",
-            number:90
+            number:94
         },{
             name:"Reactjs",
-            number:90
+            number:95
+        },{
+            name:"Firebase",
+            number:80
         },{
             name:"Redux",
-            number:90
+            number:95
         },{
             name:"Typescript",
-            number:90
+            number:80
         },{
             name:"Nextjs",
-            number:90
+            number:80
         }
     ]
     const [
