@@ -4,11 +4,20 @@
 *{
   font-family: 'Heebo', sans-serif;
 }
+.vert{
+  display:flex;
+}
 body{
-  background:  #1C1C1E;
+  background:  #000000;
+}
+.bbb{
+  color:#bbb;
+}
+.mont{
+  font-family: 'Heebo', sans-serif;
 }
 .bg-black{
-  background-color: #1C1C1E;
+  background-color: #000000;
 }
 .bio{
   background-image: url(https://proxify.io/_nuxt/img/83827f9.svg);
@@ -41,7 +50,7 @@ body{
   padding-top:2rem;
 }
 .lightgrey{
-  color:#5258fb
+  color:aqua
 }
 .c-blue{
   color: #CCCCFF;
@@ -56,14 +65,14 @@ body{
 .label{
   margin-bottom: -0.9rem;
   z-index: 1;
-  background: #1C1C1E;
+  background: #000000;
   width: fit-content;
   color:white;
 }
 .input{
   border: 1px solid grey;
   color:white;
-  background: #1C1C1E;
+  background: #000000;
 }
 .link-nav{
   text-decoration: none;
@@ -74,6 +83,9 @@ body{
   background:#f9f9f9;
 }
 .r-12{
+  border-radius: 12px 12px 0 0;
+}
+.r2-12{
   border-radius: 12px 12px 0 0;
 }
 .wr-12{
@@ -95,9 +107,14 @@ body{
 .hamburger{
   display:none;
 }
+.skill-wrapper{
+  display:flex;
+  justify-content:space-between;
+}
 .skills{
   display:block;
-  color: white;
+  color:#434343 ;
+  text-align: center;
   font-family: 'Nunito', sans-serif;
   list-style: none;
   text-align: left;
@@ -107,7 +124,7 @@ body{
   color:purple;
 }
 .bg-blue{
-  background-color: #5258fb;
+  background-color: aqua;
 }
 .bg-purple{
   background-color: purple;
@@ -154,7 +171,18 @@ body{
 .person-2{
   display:block;
 }
+
 @media only screen and (min-width:320px) and (max-width:767px){
+  .r2-12{
+    border-radius:  0;
+  }
+  .vert{
+    display:none;
+  }
+  .skill-wrapper{
+    display:flex;
+    justify-content:center;
+  }
   .person-1{
     display:block;
     width:50%;
@@ -181,7 +209,7 @@ body{
       left: 0;
       z-index:100;
       width: 70%;
-      background: #1C1C1E;
+      background: #000000;
       top:0;
       padding:1rem;
    }

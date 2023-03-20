@@ -37,15 +37,16 @@ export const Nav =({
     return(
         <div className="nav">
             <div className="d-flex align-items-center justify-content-between wt-40">
-                <span className="fw-bold fs-5 text-white roboto">
-                    <span>
-                        <FaAccusoft
-                            color="#5258fb"
-                            size="3rem"
-                            className="me-1"
-                        />
-                    </span>
-                    <span>
+                <span className="fw-bold fs-5 lightgrey roboto">
+                    <span 
+                        className="display-5"
+                        style={{
+                            fontFamily: `'Montserrat Alternates', sans-serif`,
+                            fontWeight:"300",
+                            color: "#bbb",
+                            fontSize:"38px"
+                        }}
+                        >
                         LawalH. I
                     </span>
                     </span>
@@ -95,7 +96,7 @@ export const Nav =({
                             contactref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
                         }
                     }}>Contact</h6>
-                    <a href='/LawalHamzatResume.pdf' download className="btn btn-md bg-blue text-white p-3" onClick={()=>hideNav()}>Download Cv</a>
+                    <a href='/LawalHamzatResume.pdf' download className="btn btn-md bg-blue text-dark p-3" onClick={()=>hideNav()}>Download Cv</a>
                 </div>
             </motion.div>
            

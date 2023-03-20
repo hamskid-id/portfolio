@@ -32,14 +32,14 @@ export const Contact=()=>{
     },[state])
     
     return(
-        <>
-            <h6 className="fs-1 nunito text-white mt-5">Contact Me</h6>
+        <div className="wt-75 m-auto p-4 bg bg-black contact">
+            <h6 className="fs-1 nunito lightgrey mt-5 bg-black p-2 r-12">Contact Me</h6>
             <motion.h6
                 animate={
                     isInView ? "staggered":"staggeredback"
                 }
                 variants={variants} 
-                className="fs-6 mb-5 staggered grey">Interested in working together? We should queue up a chat.
+                className="fs-6 mb-5 staggered text-white">Interested in working together? We should queue up a chat.
             </motion.h6>
                 <div 
                     ref={ref}
@@ -160,7 +160,7 @@ export const Contact=()=>{
                                 />
                             </div>
                             <button 
-                                className="btn bg-blue text-white btn-md"
+                                className="btn bg-blue text-dark btn-md"
                                 type="submit" 
                                 disabled={state.submitting}>
                                 Submit
@@ -168,6 +168,6 @@ export const Contact=()=>{
                         </form>
                     </motion.div>
                 </div>
-        </>
+        </div>
     )
 }

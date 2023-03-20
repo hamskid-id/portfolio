@@ -3,6 +3,7 @@ export const variants = {
         opacity: 1,
         display:"block",
         x: 0, 
+        ease: [0.2, 0.65, 0.3, 0.9],
         transition: {
             duration: 0.8
         } 
@@ -25,6 +26,7 @@ export const variants = {
     },
     moveFromRight: {
          opacity: 1,
+         ease: [0.2, 0.65, 0.3, 0.9],
         display:"block",
          x: 0,
          transition: {
@@ -50,6 +52,7 @@ export const variants = {
     staggered: { 
         opacity: 1, 
         display:"block",
+        ease: [0.2, 0.65, 0.3, 0.9],
         x: 0, 
         transition: { 
             staggerChildren: 0.07,
@@ -69,6 +72,7 @@ export const variants = {
     open: { 
         opacity: 1, 
         x: 0, 
+        ease: [0.2, 0.65, 0.3, 0.9],
         transition: { 
             staggerChildren: 0.07, 
             delayChildren: 0.2 

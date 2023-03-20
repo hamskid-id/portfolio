@@ -4,7 +4,7 @@ export const Footer=()=>{
     return(
         <div className="d-flex flex-column bg-black align-items-center justify-content-center py-5 wr-12 px-3">
             <FaAccusoft
-                color="#5258fb"
+                color="#61dafb"
                 size="4rem"
             />
             <p className="fs-5 text-white text-start grey mt-2">Living, Learning & Leveling up day by day.</p>
@@ -42,7 +42,7 @@ export const Footer=()=>{
                 <span>
                     <FaRegCopyright
                         size="1.3rem"
-                        color="grey"
+                        color="white"
                     />
                 </span>
                 <span className="fs-5 text-start grey ms-1">LawalH</span>

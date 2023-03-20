@@ -1,6 +1,6 @@
 export const Vertex =()=>{
     return(
-        <div className="d-flex flex-column align-items-center justify-content-center">
+        <div className=" flex-column align-items-center justify-content-center vert">
             <div className="bg-blue rounded-circle p-2">
             </div>
             <div

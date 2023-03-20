@@ -41,8 +41,16 @@ export const Biograph=()=>{
                                     key={index}
                                     className="d-flex flex-column align-items-start mb-5 moveFromLeft"
                                     >
-                                    <p className="fs-5 grey fw-bold">{name}</p>
-                                    <p className="fs-6 text-white text-start text-white">{desc}</p>
+                                    <p 
+                                    style={{
+                                        fontFamily: `'Karla', sans-serif`,
+                                        }}
+                                    className="fs-5 bbb">{name}</p>
+                                    <p
+                                     style={{
+                                        fontFamily: `'Montserrat Alternates', sans-serif`,
+                                    }}
+                                     className="fs-6 text-start grey">{desc}</p>
                                 </motion.div>
                             )
                         })
@@ -79,8 +87,8 @@ export const Biograph=()=>{
                                     key={index}
                                     className="d-flex flex-column align-items-end mb-5 moveFromRight"
                                 >
-                                    <p className="fs-5 grey fw-bold">{name}</p>
-                                    <p className="display-5 text-white">{desc}</p>
+                                    <p className="fs-5 bbb">{name}</p>
+                                    <p className="display-5 grey">{desc}</p>
                                 </motion.div>
                             )
                         })

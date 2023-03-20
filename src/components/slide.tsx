@@ -47,7 +47,7 @@ export default function SimpleSlider({isInView}:view) {
       };
 
     return (
-      <div className="w-100 prr-5">
+      <div className="w-100 prr-5 bg-black">
         <Slider {...settings}>
             {
                 [

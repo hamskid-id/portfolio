@@ -31,7 +31,11 @@ export const Intro=()=>{
                     isInView ? "staggered":"staggeredback"
                 }
                 variants={variants}  
-                className="display-4 nunito lightgrey fw-bolder">
+                className="display-3 nunito lightgrey"
+                style={{
+                    fontFamily: `'Karla', sans-serif`,
+                }}
+                >
                 Frontend Developer
             </motion.h6>
             <div className="person-1">
