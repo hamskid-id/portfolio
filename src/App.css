@@ -196,6 +196,9 @@ body{
   }
 }
 @media only screen and (min-width:320px) and (max-width:768px){
+  .bio {
+    background-position: 50%;
+    }
   .hamburger{
     display:block;
     transform: translate(100% 50%);
