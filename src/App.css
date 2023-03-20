@@ -25,7 +25,7 @@ body{
 .bio{
   background-image: url(https://proxify.io/_nuxt/img/83827f9.svg);
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 60%;
   background-size: cover;
 }
 .skill-content{
@@ -155,8 +155,8 @@ body{
 }
 
 .mrx-5{
-  margin-right:3rem;
-  margin-left:3rem;
+  margin-right:1rem;
+  margin-left:1rem;
 }
 .prr-5{
   padding:2rem;

@@ -25,6 +25,7 @@ export const Projects=()=>{
                 <SimpleSlider
                     isInView={isInView}
                 />
+                
             </div>
         </div>
     )

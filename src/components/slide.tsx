@@ -13,8 +13,11 @@ export default function SimpleSlider({isInView}:view) {
       const settings = {
         dots: true,
         infinite: true,
+        className: "center",
+        centerMode: true,
+        centerPadding: "60px",
         speed: 2000,
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -40,7 +43,8 @@ export default function SimpleSlider({isInView}:view) {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            centerMode:false,
           }
         }
         ]
@@ -86,11 +90,11 @@ export default function SimpleSlider({isInView}:view) {
                             variants={variants} 
                             className="moveFromLeft"
                             key={index}>
-                            <div className="d-flex flex-column align-items-start justify-content-start mrx-5">                                
+                            <div className="d-flex flex-column align-items-start justify-content-start mrx-5 shadow p-2">                                
                                 <img 
                                     src={image}
                                     alt="object not found"
-                                    className="w-100 full-r-12 mb-4 slide-img"
+                                    className="w-100 rounded mb-4 slide-img"
                                 />
                                 <h6 className="grey fs-6">web</h6>
                                 <h6 className="fw-bold text-white fs-5 text-start">{name}</h6>
