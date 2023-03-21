@@ -79,7 +79,11 @@ export default function SimpleSlider({isInView}:view) {
                         image:"https://res.cloudinary.com/hamskid/image/upload/v1678948941/screencapture-webdelivery-onrender-2023-03-15-22_50_08_dcebfy.png",
                         name:"Delivery website",
                         link:"https://webdelivery.onrender.com/"
-                    },
+                    },{
+                      image:"https://res.cloudinary.com/hamskid/image/upload/v1679388648/screencapture-applyforme-app-2023-03-21-01_00_22_eztyjh.png",
+                      name:"Apply For Me",
+                      link:"https://applyforme.app/"
+                  }
                 ].map((slide,index)=>{
                     const {name, image, link} = slide;
                     return(
