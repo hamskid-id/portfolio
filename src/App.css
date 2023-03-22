@@ -103,7 +103,7 @@ body{
 .link-nav{
   text-decoration: none;
   float: left;
-  color:#434343;
+  color:#bbb;
 }
 .bg-gainsboro{
   background:#f9f9f9;
@@ -178,6 +178,9 @@ body{
 }
 .bg-purple{
   background-color: purple;
+}
+.link-nav:hover{
+  color:white;
 }
 .wt-50{
   width:50%;

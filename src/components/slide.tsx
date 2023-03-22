@@ -115,7 +115,7 @@ export default function SimpleSlider({isInView}:view) {
                                       }
                                     </div>
                                     <a 
-                                        className="link-nav mt-2 text-dark btn btn-sm bg-blue border-blue"
+                                        className="link-nav mt-2 bg-dark btn btn-sm"
                                         href={link}>
                                         View demo <span><FaArrowRight/></span>
                                     </a>
