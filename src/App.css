@@ -54,7 +54,7 @@ body{
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    background-color: aquamarine;
+    background-color: #AAEEC4;
     padding: 0.5rem;
     cursor: pointer;
     -webkit-user-select: none;
@@ -76,7 +76,7 @@ body{
   padding-top:2rem;
 }
 .lightgrey{
-  color:aquamarine
+  color:#AAEEC4
 }
 .c-blue{
   color: #CCCCFF;
@@ -171,10 +171,10 @@ body{
   color:purple;
 }
 .bg-blue{
-  background-color: aquamarine;
+  background-color: #AAEEC4;
 }
 .border-blue{
-  border:1px solid aquamarine;
+  border:1px solid #AAEEC4;
 }
 .bg-purple{
   background-color: purple;
