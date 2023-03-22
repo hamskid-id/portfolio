@@ -46,6 +46,26 @@ body{
   justify-content: space-between;
   align-items:center;
 }
+.cv{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: aquamarine;
+    padding: 0.5rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: 0.8rem;
+}
 .fs-6{
   font-size: 1.5rem;
   color:white;
@@ -56,7 +76,7 @@ body{
   padding-top:2rem;
 }
 .lightgrey{
-  color:aqua
+  color:aquamarine
 }
 .c-blue{
   color: #CCCCFF;
@@ -117,6 +137,26 @@ body{
   display:flex;
   justify-content:space-between;
 }
+.transparent-brown{
+  background: rgba(34, 34, 34, 0.8);
+}
+.br-12{
+  border-radius: 12px;
+}
+.cover{
+  z-index: 1;
+  background-color: #222;
+}
+.togg{
+  display:none;
+  justify-content: center;
+  flex-direction:column;
+  position:fixed;
+  bottom :1rem;
+  margin: 0 auto;
+  left: 25%;
+  right: 25%;
+}
 .skills{
   display:block;
   color:#434343 ;
@@ -130,7 +170,10 @@ body{
   color:purple;
 }
 .bg-blue{
-  background-color: aqua;
+  background-color: aquamarine;
+}
+.border-blue{
+  border:1px solid aquamarine;
 }
 .bg-purple{
   background-color: purple;
@@ -177,6 +220,9 @@ body{
 .person-2{
   display:block;
 }
+.navLinkLinks {
+ color:white;
+}
 
 @media only screen and (min-width:320px) and (max-width:767px){
   .r2-12{
@@ -199,6 +245,17 @@ body{
   }
 }
 @media only screen and (min-width:320px) and (max-width:768px){
+  .togg{
+    display: flex;
+  }
+  .cv{
+    padding: 0.4rem;
+    font-size:0.7rem;
+  }
+  .navLinkLinks {
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+}
   .bio {
     background-position: 50%;
     }
@@ -213,20 +270,14 @@ body{
   }
    .mobilenav{
       display:none;
-      position: fixed;
-      height: 100vh;
-      left: 0;
-      z-index:100;
-      width: 70%;
-      background: #1B1B1B;
-      top:0;
-      padding:1rem;
    }
    .navLink{
     align-items: flex-start;
-   }
-   .navLinkLinks{
-    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top:0.5rem;
+    background-color: #222;
+    padding-left: 0.3rem;
+    margin-bottom: -0.5rem;
    }
   .project{
     margin-top: 2rem;

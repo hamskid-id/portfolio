@@ -5,12 +5,14 @@ import { motion} from "framer-motion";
 import { variants } from "./varient";
 
 interface refProps {
+    Navref:React.RefObject<HTMLDivElement>,
     projectref:React.RefObject<HTMLDivElement>,
     skillref:React.RefObject<HTMLDivElement>,
     contactref:React.RefObject<HTMLDivElement>,
 }
 
 export const Nav =({
+    Navref,
     projectref,
     skillref,
     contactref
@@ -37,25 +39,16 @@ export const Nav =({
     return(
         <div className="nav">
             <div className="d-flex align-items-center justify-content-between wt-40">
-                <span className="fw-bold fs-5 lightgrey roboto">
-                    <span 
-                        className="display-5"
-                        style={{
-                            fontFamily: `'Montserrat Alternates', sans-serif`,
-                            fontWeight:"400",
-                            color: "#bbb",
-                            fontSize:"38px"
-                        }}
-                        >
-                        <b>Law</b>alH. I
-                    </span>
-                    </span>
-                <span className="hamburger rounded-circle p-3 border-grey">
-                    <FaAlignRight
-                        color="white"
-                        size="1.5rem"
-                        onClick={showNav}
-                    />
+                <span 
+                    className="display-5"
+                    style={{
+                        fontFamily: `'Montserrat Alternates', sans-serif`,
+                        fontWeight:"400",
+                        color: "#bbb",
+                        fontSize:"38px"
+                    }}
+                    >
+                    <b>Law</b>alH. I
                 </span>
             </div>
             <motion.div
@@ -69,34 +62,31 @@ export const Nav =({
                 className=" wt-60 mobilenav"
             >
                 <div className="navLink">
-                    <FaTimes
-                        color="white"
-                        size="1.5rem"
-                        className="navLinkLinks hamburger"
-                        onClick={hideNav}
-                    />
-                    <h6 className="navLinkLinks fs-6" onClick={()=>{
+                    <h6 className="navLinkLinks" onClick={()=>{
+                        if(Navref.current){
                             hideNav()
+                            Navref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                        }
                     }}>Home</h6>
-                    <h6 className="navLinkLinks fs-6" onClick={()=>{
+                    <h6 className="navLinkLinks" onClick={()=>{
                         if(skillref.current){
                              hideNav()
                             skillref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
                         }
                     }}>Skills</h6>
-                    <h6 className="navLinkLinks fs-6" onClick={()=>{
+                    <h6 className="navLinkLinks" onClick={()=>{
                         if(projectref.current){
                              hideNav()
                             projectref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
                         }
                     }}>Projects</h6>
-                    <h6 className="navLinkLinks fs-6" onClick={()=>{
+                    <h6 className="navLinkLinks" onClick={()=>{
                         if(contactref.current){
                              hideNav()
                             contactref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
                         }
                     }}>Contact</h6>
-                    <a href='/LawalHamzatResume.pdf' download className="btn btn-md bg-blue text-dark p-3" onClick={()=>hideNav()}>Download Cv</a>
+                    <a href='/LawalHamzatResume.pdf' download className="cv" onClick={()=>hideNav()}>Download Cv</a>
                 </div>
             </motion.div>
            

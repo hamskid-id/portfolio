@@ -111,11 +111,11 @@ export default function SimpleSlider({isInView}:view) {
                                     <h6 className="fw-bold text-white fs-5 text-start">{name}</h6>
                                     <div className="d-flex wrap">
                                       {
-                                        stack.map(st=> <span className="mb-1 badge me-2 bg text-warning bg-dark">{st}</span>)
+                                        stack.map(st=> <span className="mb-1 badge me-2 bg lightgrey bg-dark">{st}</span>)
                                       }
                                     </div>
                                     <a 
-                                        className="link-nav mt-2 text-dark btn btn-sm btn-warning"
+                                        className="link-nav mt-2 text-dark btn btn-sm bg-blue border-blue"
                                         href={link}>
                                         View demo <span><FaArrowRight/></span>
                                     </a>
