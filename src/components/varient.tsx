@@ -69,6 +69,22 @@ export const variants = {
         staggerDirection: -1 
         }   
     },
+    navOpen: {
+        left: "20px",
+        width: "90%",
+        transition: { 
+            duration:0.3
+        } 
+    },
+    navClose: {
+        left: "25%",
+        right:"25%",
+        y:"0",
+        width:"fit-content",
+        transition: { 
+            duration:0.3,
+        }   
+    },
     open: { 
         opacity: 1, 
         x: 0, 

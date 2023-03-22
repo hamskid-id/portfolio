@@ -4,7 +4,7 @@ export const Footer=()=>{
     return(
         <div className="d-flex flex-column bg-black align-items-center justify-content-center py-5 wr-12 px-3">
             <FaAccusoft
-                color="#61dafb"
+                color="aquamarine"
                 size="4rem"
             />
             <p

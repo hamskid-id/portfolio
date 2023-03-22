@@ -41,7 +41,7 @@ export const HomeScreen=()=>{
             </div>
             <div>
                 <ToggleIcon
-                   Navref={Navref}
+                    Navref={Navref}
                     projectref={projectref}
                     skillref={skillref}
                     contactref={contactref}

@@ -1,8 +1,9 @@
 import {FaAlignRight } from "react-icons/fa";
-import { FaAccusoft,FaTimes } from "react-icons/fa";
+import {FaTimes } from "react-icons/fa";
 import {useRef,useState} from "react"
 import { motion} from "framer-motion";
 import { variants } from "./varient";
+import { Mobilenav } from "./mobileNav";
 
 interface refProps {
     Navref:React.RefObject<HTMLDivElement>,
@@ -33,51 +34,29 @@ export const ToggleIcon=({
         setShowNavToggler(false)
         setTimeout(()=>{
             navRef.current?.classList.remove("active");
-            setShowNavToggler(null)
+            setShowNavToggler(false)
         },400)
     }
 
     return(
-        <div>
-            <div className="br-12 p-1 transparent-brown togg">
-                <motion.div
-                    animate={
-                        showNavToggler ? "open": 
-                        showNavToggler===false ? 
-                        "closed":"default"
-                    }
-                    ref={navRef}
-                    variants={variants}
-                    className=" wt-60 mobilenav"
-                >
-                    <div className="navLink">
-                        <h6 className="navLinkLinks" onClick={()=>{
-                            if(Navref.current){
-                                hideNav()
-                                Navref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                            }
-                        }}>Home</h6>
-                        <h6 className="navLinkLinks" onClick={()=>{
-                            if(skillref.current){
-                                hideNav()
-                                skillref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                            }
-                        }}>Skills</h6>
-                        <h6 className="navLinkLinks" onClick={()=>{
-                            if(projectref.current){
-                                hideNav()
-                                projectref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                            }
-                        }}>Projects</h6>
-                        <h6 className="navLinkLinks" onClick={()=>{
-                            if(contactref.current){
-                                hideNav()
-                                contactref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                            }
-                        }}>Contact</h6>
-                        <a href='/LawalHamzatResume.pdf' download className="cv" onClick={()=>hideNav()}>Download Cv</a>
-                    </div>
-                </motion.div>
+        <>
+            <motion.div
+                animate={
+                    showNavToggler ? "navOpen": 
+                    showNavToggler===false ? 
+                    "navClose":"default"
+                }
+                variants={variants} 
+                className="br-12 p-1 transparent-brown togg">
+                <Mobilenav
+                    showNavToggler={showNavToggler}
+                    Navref={Navref}
+                    hideNav={hideNav}
+                    projectref={projectref}
+                    contactref={contactref}
+                    skillref={skillref}
+                    navRef={navRef}
+                />
                 <div className="br-12 p-3 fs-6 cover d-flex justify-content-between">
                     <span className="text-white">
                         i.<span className="lightgrey"> lawalH</span><span className="bbb">.web</span>
@@ -100,7 +79,7 @@ export const ToggleIcon=({
                         }
                     </span>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </>
     )
 }

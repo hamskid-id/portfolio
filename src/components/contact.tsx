@@ -5,19 +5,10 @@ import { motion, useInView } from "framer-motion";
 // import { useForm} from "react-hook-form";
 import { useForm, ValidationError } from '@formspree/react';
 import { toast } from "react-toastify";
-
-
-// type FormData = {
-//     names: string,
-//     mail: string,
-//     project:string
-//  };
-
 export const Contact=()=>{
     const [state, handleSubmit] = useForm("mjvdonow");
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-    const form = useRef();
     useEffect(()=>{
         if (state.succeeded) {
             toast("Successfully sent")

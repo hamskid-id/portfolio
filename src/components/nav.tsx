@@ -1,8 +1,5 @@
-import {FaAlignRight } from "react-icons/fa";
-import { FaAccusoft,FaTimes } from "react-icons/fa";
 import {useRef,useState} from "react"
-import { motion} from "framer-motion";
-import { variants } from "./varient";
+import { Mobilenav } from "./mobileNav";
 
 interface refProps {
     Navref:React.RefObject<HTMLDivElement>,
@@ -19,14 +16,6 @@ export const Nav =({
 }:refProps)=>{
     const [showNavToggler,setShowNavToggler] = useState<true|false|null>(null);
     const navRef = useRef<HTMLDivElement>(null);
-
-    const showNav =()=>{
-        setShowNavToggler(false)
-        setTimeout(()=>{
-            navRef.current?.classList.add("active");
-            setShowNavToggler(null)
-        },100)
-    }
 
      const hideNav =()=>{
         setShowNavToggler(false)
@@ -51,45 +40,15 @@ export const Nav =({
                     <b>Law</b>alH. I
                 </span>
             </div>
-            <motion.div
-                animate={
-                    showNavToggler ? "open": 
-                    showNavToggler===false ? 
-                    "closed":"default"
-                }
-                ref={navRef}
-                variants={variants}
-                className=" wt-60 mobilenav"
-            >
-                <div className="navLink">
-                    <h6 className="navLinkLinks" onClick={()=>{
-                        if(Navref.current){
-                            hideNav()
-                            Navref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                        }
-                    }}>Home</h6>
-                    <h6 className="navLinkLinks" onClick={()=>{
-                        if(skillref.current){
-                             hideNav()
-                            skillref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                        }
-                    }}>Skills</h6>
-                    <h6 className="navLinkLinks" onClick={()=>{
-                        if(projectref.current){
-                             hideNav()
-                            projectref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                        }
-                    }}>Projects</h6>
-                    <h6 className="navLinkLinks" onClick={()=>{
-                        if(contactref.current){
-                             hideNav()
-                            contactref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                        }
-                    }}>Contact</h6>
-                    <a href='/LawalHamzatResume.pdf' download className="cv" onClick={()=>hideNav()}>Download Cv</a>
-                </div>
-            </motion.div>
-           
+            <Mobilenav
+                showNavToggler={showNavToggler}
+                Navref={Navref}
+                hideNav={hideNav}
+                projectref={projectref}
+                contactref={contactref}
+                skillref={skillref}
+                navRef={navRef}
+                />
         </div>
     )
 }
