@@ -51,41 +51,47 @@ export default function SimpleSlider({isInView}:view) {
       };
 
     return (
-      <div className="w-100 prr-5 bg-black">
+      <div className="w-100 bg-black">
         <Slider {...settings}>
             {
                 [
                     {
-                        image:"https://res.cloudinary.com/hamskid/image/upload/v1678948953/screencapture-hamskid-id-github-io-zuritask3-2023-03-15-22_53_50_gkesku.png",
+                        image:"https://res.cloudinary.com/hamskid/image/upload/v1679496730/4a724ba6-0b4f-43e2-9887-1f89d4edcfca_qa81ge.jpg",
                         name:"MetaBnb clone",
-                        link:"https://hamskid-id.github.io/zuritask3/"
+                        link:"https://hamskid-id.github.io/zuritask3/",
+                        stack:["Reactjs","bootstrap"]
                     },
                     {
-                        image:"https://res.cloudinary.com/hamskid/image/upload/v1678948881/screencapture-emailmarketing-nine-vercel-app-auth-login-2023-03-15-22_40_33_fcznzv.png",
+                        image:"https://res.cloudinary.com/hamskid/image/upload/v1679496727/06c9b73c-2d2d-4d40-89f9-dbb126a93f6f_ndm8va.jpg",
                         name:"Emailmarketting dashboard",
-                        link:"https://emailmarketing-nine.vercel.app/"
+                        link:"https://emailmarketing-nine.vercel.app/",
+                        stack:["Reactjs","Bootstrap","Php"]
                     },
                     {
-                        image:"https://res.cloudinary.com/hamskid/image/upload/v1678948955/screencapture-webcommerce-onrender-2023-03-15-22_44_47_nplmnx.png",
+                        image:"https://res.cloudinary.com/hamskid/image/upload/v1679496731/b4401e4e-faaa-4492-adf1-4c3199bc800c_y5sck0.png",
                         name:"Ecommerce website",
-                        link:"https://webcommerce.onrender.com/"
+                        link:"https://webcommerce.onrender.com/",
+                        stack:["Reactjs","Bootstrap","Nodejs"]
                     },
                     {
-                        image:"https://res.cloudinary.com/hamskid/image/upload/v1678948877/screencapture-availableproduct-b0af4-web-app-board-Second-board-2023-03-15-22_46_52_tapybc.png",
-                        name:"Kanban task tracker",
-                        link:"https://availableproduct-b0af4.web.app/"
+                        image:"https://res.cloudinary.com/hamskid/image/upload/v1679496732/1a41c815-0cb4-4eff-a041-345b76ebe106_ryal3f.jpg",
+                        name:"Sensitive clone",
+                        link:"https://peaceful-gates-6797a8.netlify.app/",
+                        stack:["Html","Css","Javascript"]
                     },
                     {
-                        image:"https://res.cloudinary.com/hamskid/image/upload/v1678948941/screencapture-webdelivery-onrender-2023-03-15-22_50_08_dcebfy.png",
+                        image:"https://res.cloudinary.com/hamskid/image/upload/v1679496732/8eb9a2ec-b43d-4c64-8439-7932349cea90_wes2zs.png",
                         name:"Delivery website",
-                        link:"https://webdelivery.onrender.com/"
+                        link:"https://webdelivery.onrender.com/",
+                        stack:["Reactjs","Nodejs","Bootstrap"]
                     },{
-                      image:"https://res.cloudinary.com/hamskid/image/upload/v1679388648/screencapture-applyforme-app-2023-03-21-01_00_22_eztyjh.png",
+                      image:"https://res.cloudinary.com/hamskid/image/upload/v1679496729/b536081a-b1d0-4625-8646-7a4d7ba24d3e_qom4of.png",
                       name:"Apply For Me",
-                      link:"https://applyforme.app/"
+                      link:"https://applyforme.app/",
+                      stack:["Reactjs","Java"]
                   }
                 ].map((slide,index)=>{
-                    const {name, image, link} = slide;
+                    const {name, image, link,stack} = slide;
                     return(
                         <motion.div
                             animate={
@@ -94,19 +100,26 @@ export default function SimpleSlider({isInView}:view) {
                             variants={variants} 
                             className="moveFromLeft"
                             key={index}>
-                            <div className="d-flex flex-column align-items-start justify-content-start mrx-5 shadow p-2">                                
+                            <div className="d-flex flex-column align-items-start justify-content-start mrx-5 shadow">                                
                                 <img 
                                     src={image}
                                     alt="object not found"
-                                    className="w-100 rounded mb-4 slide-img"
+                                    className="w-100 mb-4"
                                 />
-                                <h6 className="grey fs-6">web</h6>
-                                <h6 className="fw-bold text-white fs-5 text-start">{name}</h6>
-                                <a 
-                                    className="link-nav mt-2"
-                                    href={link}>
-                                    View demo <span><FaArrowRight/></span>
-                                </a>                                   
+                                <div className="p-2 d-flex align-items-start flex-column">
+                                    <h6 className="grey fs-6">web</h6>
+                                    <h6 className="fw-bold text-white fs-5 text-start">{name}</h6>
+                                    <div className="d-flex wrap">
+                                      {
+                                        stack.map(st=> <span className="mb-1 badge me-2 bg text-warning bg-dark">{st}</span>)
+                                      }
+                                    </div>
+                                    <a 
+                                        className="link-nav mt-2 text-dark btn btn-sm btn-warning"
+                                        href={link}>
+                                        View demo <span><FaArrowRight/></span>
+                                    </a>
+                                </div>                                   
                             </div>
                         </motion.div> 
                     )

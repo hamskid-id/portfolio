@@ -18,13 +18,6 @@ export const Contact=()=>{
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const form = useRef();
-    
-    // const { 
-    //     register, 
-    //     handleSubmit, 
-    //     formState: { errors } 
-    // } = useForm<FormData>();
-    // const onSubmit = handleSubmit(data => console.log(data));
     useEffect(()=>{
         if (state.succeeded) {
             toast("Successfully sent")

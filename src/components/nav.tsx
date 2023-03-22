@@ -47,7 +47,7 @@ export const Nav =({
                             fontSize:"38px"
                         }}
                         >
-                        LawalH. I
+                        <b>Law</b>alH. I
                     </span>
                     </span>
                 <span className="hamburger rounded-circle p-3 border-grey">
