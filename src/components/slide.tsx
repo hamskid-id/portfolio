@@ -83,6 +83,11 @@ export default function SimpleSlider({isInView}:view) {
                       name:"Apply For Me",
                       link:"https://applyforme.app/",
                       stack:["Reactjs","Java"]
+                  },{
+                      image:"https://res.cloudinary.com/hamskid/image/upload/v1680390204/7fa63c89-d0b4-4a64-ab4e-f4cbaebf71d8_s7f1tb.png",
+                      name:"MovieFlix",
+                      link:"https://movieflix-rust.vercel.app/",
+                      stack:["Reactjs","Typescript","bootstrap"]
                   }
                 ].map((slide,index)=>{
                     const {name, image, link,stack} = slide;
