@@ -50,19 +50,17 @@ body{
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #AAEEC4;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    background-color: #AAEEC4;
+    border-bottom:2px solid #AAEEC4;
     padding: 0.5rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    border: 1px solid transparent;
     font-size: 1rem;
-    border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     padding: 0.8rem;
 }
