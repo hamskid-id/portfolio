@@ -62,12 +62,6 @@ export default function SimpleSlider({isInView}:view) {
                         stack:["Reactjs","bootstrap"]
                     },
                     {
-                        image:"https://res.cloudinary.com/hamskid/image/upload/v1679496727/06c9b73c-2d2d-4d40-89f9-dbb126a93f6f_ndm8va.jpg",
-                        name:"Emailmarketting dashboard",
-                        link:"https://emailmarketing-nine.vercel.app/",
-                        stack:["Reactjs","Bootstrap","Php"]
-                    },
-                    {
                         image:"https://res.cloudinary.com/hamskid/image/upload/v1679496731/b4401e4e-faaa-4492-adf1-4c3199bc800c_y5sck0.png",
                         name:"Ecommerce website",
                         link:"https://webcommerce.onrender.com/",
@@ -89,6 +83,11 @@ export default function SimpleSlider({isInView}:view) {
                       name:"Apply For Me",
                       link:"https://applyforme.app/",
                       stack:["Reactjs","Java"]
+                  },{
+                      image:"https://res.cloudinary.com/hamskid/image/upload/v1680390204/7fa63c89-d0b4-4a64-ab4e-f4cbaebf71d8_s7f1tb.png",
+                      name:"MovieFlix",
+                      link:"https://movieflix-rust.vercel.app/",
+                      stack:["Reactjs","Typescript","bootstrap"]
                   }
                 ].map((slide,index)=>{
                     const {name, image, link,stack} = slide;
