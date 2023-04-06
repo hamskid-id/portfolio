@@ -74,11 +74,6 @@ export default function SimpleSlider({isInView}:view) {
                         stack:["Html","Css","Javascript"]
                     },
                     {
-                        image:"https://res.cloudinary.com/hamskid/image/upload/v1679496732/8eb9a2ec-b43d-4c64-8439-7932349cea90_wes2zs.png",
-                        name:"Delivery website",
-                        link:"https://webdelivery.onrender.com/",
-                        stack:["Reactjs","Nodejs","Bootstrap"]
-                    },{
                       image:"https://res.cloudinary.com/hamskid/image/upload/v1679496729/b536081a-b1d0-4625-8646-7a4d7ba24d3e_qom4of.png",
                       name:"Apply For Me",
                       link:"https://applyforme.app/",
