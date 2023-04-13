@@ -46,7 +46,7 @@ export const BarChart =()=>{
             number:80
         },{
             name:"Nextjs",
-            number:80
+            number:60
         }
     ]
     const [
