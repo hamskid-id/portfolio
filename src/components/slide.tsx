@@ -74,6 +74,12 @@ export default function SimpleSlider({isInView}:view) {
                         stack:["Html","Css","Javascript"]
                     },
                     {
+                        image:"https://res.cloudinary.com/hamskid/image/upload/v1681416331/cf31d628-8749-49d2-8a1c-696af925da6a_ishekz.jpg",
+                        name:"Email dahboard",
+                        link:"https://emailmarketing-nine.vercel.app/",
+                        stack:["Reactjs","bootstrap","Php"]
+                    },
+                    {
                       image:"https://res.cloudinary.com/hamskid/image/upload/v1679496729/b536081a-b1d0-4625-8646-7a4d7ba24d3e_qom4of.png",
                       name:"Apply For Me",
                       link:"https://applyforme.app/",
