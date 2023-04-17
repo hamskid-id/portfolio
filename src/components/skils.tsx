@@ -22,7 +22,12 @@ export const Skills=()=>{
                         variants={variants}
                         className="wt-50"
                     >
-                        <h6 className="fs-3 lightgrey fw-bold nunito mb-3">My favorite skills</h6>
+                        <h6 
+                            className="fs-3 bbb fw-bold nunito mb-3"
+                            style={{
+                                fontFamily: `'Karla', sans-serif`,
+                            }}
+                        >My favorite skills</h6>
                         <div className="w-100">
                             <BarChart/>
                         </div>
@@ -34,7 +39,11 @@ export const Skills=()=>{
                         }
                         variants={variants}
                     >
-                        <h6 className="fs-3 nunito lightgrey fw-bold mb-3">DevTools</h6>
+                        <h6
+                            className="fs-3 bbb fw-bold nunito mb-3"
+                            style={{
+                                fontFamily: `'Karla', sans-serif`,
+                            }}>DevTools</h6>
                         <div className="d-flex justify-content-center mt-3">
                             <span
                             >

@@ -4,6 +4,24 @@
 *{
   font-family: 'Heebo', sans-serif;
 }
+.viewdemo{
+  border:1px solid grey;
+  border-radius: 7px;
+  padding:0.5rem;
+}
+.project_img{
+  filter:brightness(0.7);
+  border-radius: 7px;
+}
+.bg-black{
+  background:black;
+}
+.tag{
+  font-size: 12px;
+}
+.wrap{
+  flex-wrap: wrap;
+}
 .vert{
   display:flex;
 }

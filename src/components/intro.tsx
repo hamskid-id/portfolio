@@ -24,7 +24,7 @@ export const Intro=()=>{
                 wrapper="h6"
                 cursor={true}
                 repeat={Infinity}
-                style={{ fontSize: '1.5em',color:"white" }}
+                style={{ fontSize: '1em',color:"white",fontWeight:"100" }}
                 />
             <motion.h6
                 animate={
