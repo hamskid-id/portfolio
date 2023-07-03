@@ -22,10 +22,7 @@ export const Contact=()=>{
                 animate={
                     isInView ? "staggered":"staggeredback"
                 }
-                variants={variants} 
-                style={{
-                    fontFamily: `'Karla', sans-serif`,
-                }}
+                variants={variants}
                 className="fs-6 mb-5 staggered text-white bbb">Interested in working together? We should queue up a chat.
             </motion.h6>
                 <div 
