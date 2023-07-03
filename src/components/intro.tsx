@@ -32,9 +32,6 @@ export const Intro=()=>{
                 }
                 variants={variants}  
                 className="display-3 nunito lightgrey fw-bold"
-                style={{
-                    fontFamily: `'Karla', sans-serif`,
-                }}
                 >
                 Frontend Developer
             </motion.h6>
