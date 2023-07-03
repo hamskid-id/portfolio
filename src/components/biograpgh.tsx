@@ -42,14 +42,9 @@ export const Biograph=()=>{
                                     className="d-flex flex-column align-items-start mb-5 moveFromLeft"
                                     >
                                     <p 
-                                    style={{
-                                        fontFamily: `'Karla', sans-serif`,
-                                        }}
                                     className="fs-5 bbb">{name}</p>
                                     <p
-                                     style={{
-                                        fontFamily: `'Montserrat Alternates', sans-serif`,
-                                    }}
+                                    
                                      className="fs-6 text-start bbb op-4">{desc}</p>
                                 </motion.div>
                             )
