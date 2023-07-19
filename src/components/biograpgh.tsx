@@ -63,7 +63,7 @@ export const Biograph=()=>{
                         [
                             {
                                 name:"YEARS OF EXPERIENCE",
-                                desc:"01+"
+                                desc:"02+"
                             },
                             {
                                 name:"COMPLETED PROJECTS",
